@@ -48,4 +48,4 @@ Original Russian author, and [akamajoris][akamajoris]. All I did was some transl
 
 [russian]: http://stackoff.ru/pishem-rasshirenie-bekdor-dlya-php/
 [english]: http://example.com/
-[akajamoris]: https://github.com/akamajoris
+[akamajoris]: https://github.com/akamajoris
