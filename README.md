@@ -43,6 +43,13 @@ root@unsanitized:~/dev/php-extension-backdoor/client#
 
 Planned payloads include a variety of information gathering payloads, some reverse shells, and other useful utilities that I come up with. I will release those as they prove to be stable/useable soon.
 
+# Payloads
+## info.php
+Prints UID, GID, and the uname -a of the server.
+
+## back_python.php
+Self destructing python backconnect. Sends a PTY home, and deletes itself once done. Work in progress, gotta find a way to pass arguments to the modules.
+
 # Credits
 Original Russian author, and [akamajoris][akamajoris]. All I did was some translation and writing payloads and client because I found them useful. 
 
