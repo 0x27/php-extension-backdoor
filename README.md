@@ -50,6 +50,12 @@ Prints UID, GID, and the uname -a of the server.
 ## back_python.php
 Self destructing python backconnect. Sends a PTY home, and deletes itself once done. Work in progress, gotta find a way to pass arguments to the modules.
 
+I recommend using Socat to accept PTY shells like so:
+```
+$ socat -,echo=0,raw tcp4-listen:PORT
+```
+![PTY Backconnect](http://0x27.me/images/phpextbackdoor-pythonpty.png)
+
 # Credits
 Original Russian author, and [akamajoris][akamajoris]. All I did was some translation and writing payloads and client because I found them useful. 
 
