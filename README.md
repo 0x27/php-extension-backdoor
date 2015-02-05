@@ -1,3 +1,5 @@
+## Note: Unfinished pre-release.
+
 # PHP Backdoor Module
 
 This is an example module for adding a backdoor to the PHP installation on a webserver by adding a PHP module. Very useful for mantaining access to a compromised host.
