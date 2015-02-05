@@ -59,7 +59,7 @@ $ socat -,echo=0,raw tcp4-listen:PORT
 ![PTY Backconnect](http://0x27.me/images/phpextbackdoor-pythonpty.png)
 
 # Credits
-Original Russian author, and [akamajoris][akamajoris]. All I did was some translation and writing payloads and client because I found them useful. 
+Original Russian author, and [akamajoris][akamajoris]. All we did was some translation and writing payloads and client because we found them useful and interesting.
 
 [russian]: http://stackoff.ru/pishem-rasshirenie-bekdor-dlya-php/
 [english]: http://example.com/
